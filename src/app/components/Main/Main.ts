@@ -1,20 +1,27 @@
 import { CommonModule } from '@angular/common';
-import { Component, Signal, signal, WritableSignal } from '@angular/core';
+import {
+  Component,
+  input,
+  signal,
+  WritableSignal,
+} from '@angular/core';
 
 //metapodaci za rad ove komponente koju dekorise
 @Component({
-  selector: 'app-my-first-component', //naziv html taga
+  selector: 'app-main', //naziv html taga
   imports: [CommonModule],
-  templateUrl: './my-first-component.html',
-  styleUrl: './my-first-component.css',
+  templateUrl: './Main.html',
+  styleUrl: './Main.css',
 })
 //logika moje komponente
-export class MyFirstComponent {
+export class Main {
   //props - moze ih html koristiti za prikaz
   message: string = 'Hello world!';
   count: number = 0;
   display: boolean = true;
   title: WritableSignal<string> = signal('Prva komponenta');
+
+  receivedMessage = input();
 
   increment() {
     this.count++;
