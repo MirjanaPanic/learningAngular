@@ -1,10 +1,5 @@
 import { CommonModule } from '@angular/common';
-import {
-  Component,
-  input,
-  signal,
-  WritableSignal,
-} from '@angular/core';
+import { Component, input, signal, WritableSignal } from '@angular/core';
 
 //metapodaci za rad ove komponente koju dekorise
 @Component({
@@ -17,14 +12,21 @@ import {
 export class Main {
   //props - moze ih html koristiti za prikaz
   message: string = 'Hello world!';
-  count: number = 0;
+  count = signal(0);
   display: boolean = true;
+
   title: WritableSignal<string> = signal('Prva komponenta');
 
-  receivedMessage = input();
+  receivedMessage = input(); //prima poruku od roditelja
 
   increment() {
-    this.count++;
+    this.count.update((val) => val + 1);
+  }
+  decrement() {
+    this.count.update((val) => val - 1);
+  }
+  reset() {
+    this.count.update((val) => 0);
   }
 
   changeDisplay() {

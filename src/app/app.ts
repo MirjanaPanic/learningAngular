@@ -6,7 +6,7 @@ import { Main } from './components/Main/Main';
 
 @Component({
   selector: 'app-root', //<app-root> u html-u za izgradnju str.
-  imports: [Header, Main, RouterOutlet, Footer],
+  imports: [Header, Main, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
