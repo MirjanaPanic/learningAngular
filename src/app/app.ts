@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { MyFirstComponent } from './components/my-first-component/my-first-component';
+import { Header } from './components/header/header';
 
 @Component({
   selector: 'app-root', //<app-root> u html-u za izgradnju str.
-  imports: [MyFirstComponent],
+  imports: [Header],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

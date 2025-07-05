@@ -3,7 +3,7 @@ import { Component, Signal, signal, WritableSignal } from '@angular/core';
 
 //metapodaci za rad ove komponente koju dekorise
 @Component({
-  selector: 'MyFirstComponent', //naziv html taga
+  selector: 'app-my-first-component', //naziv html taga
   imports: [CommonModule],
   templateUrl: './my-first-component.html',
   styleUrl: './my-first-component.css',
