@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Signal, signal, WritableSignal } from '@angular/core';
 
 //metapodaci za rad ove komponente koju dekorise
 @Component({
@@ -14,6 +14,7 @@ export class MyFirstComponent {
   message: string = 'Hello world!';
   count: number = 0;
   display: boolean = true;
+  title: WritableSignal<string> = signal('Prva komponenta');
 
   increment() {
     this.count++;

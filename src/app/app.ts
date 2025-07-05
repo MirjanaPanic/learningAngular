@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MyFirstComponent } from './my-first-component/my-first-component';
+import { MyFirstComponent } from './components/my-first-component/my-first-component';
 
 @Component({
   selector: 'app-root', //<app-root> u html-u za izgradnju str.
