@@ -9,5 +9,4 @@ import { MyFirstComponent } from './my-first-component/my-first-component';
 })
 export class App {
   protected poruka = 'Javljam se iz root komponente!! :))';
-  
 }
