@@ -3,13 +3,13 @@ import { Component, input, signal, WritableSignal } from '@angular/core';
 
 //metapodaci za rad ove komponente koju dekorise
 @Component({
-  selector: 'app-main', //naziv html taga
+  selector: 'app-home', //naziv html taga
   imports: [CommonModule],
-  templateUrl: './main.html',
-  styleUrl: './main.css',
+  templateUrl: './home.html',
+  styleUrl: './home.css',
 })
 //logika moje komponente
-export class MainComponent {
+export class HomeComponent {
   //props - moze ih html koristiti za prikaz
   message: string = 'Hello world!';
   display: boolean = true;

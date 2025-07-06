@@ -1,14 +1,18 @@
-header {
-  background-color: rgb(48, 112, 76);
-  display: flex;
+nav {
+  background-color: rgb(32, 43, 78);
   color: white;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
-
 }
 
-nav {
+.items {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+}
+
+p {
+  cursor: pointer;
+  &:hover{
+    color:rgb(138, 235, 118)
+  }
 }
