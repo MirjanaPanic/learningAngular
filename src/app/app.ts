@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { Header } from './components/header/header';
+import { HeaderComponent } from './components/header/header';
 import { RouterOutlet } from '@angular/router';
-import { Footer } from './components/footer/footer';
-import { Main } from './components/Main/Main';
+import { FooterComponent } from './components/footer/footer';
 
 @Component({
   selector: 'app-root', //<app-root> u html-u za izgradnju str.
-  imports: [Header, Main, Footer],
+  imports: [HeaderComponent, RouterOutlet, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

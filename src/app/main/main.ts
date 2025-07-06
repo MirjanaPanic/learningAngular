@@ -5,16 +5,16 @@ import { Component, input, signal, WritableSignal } from '@angular/core';
 @Component({
   selector: 'app-main', //naziv html taga
   imports: [CommonModule],
-  templateUrl: './Main.html',
-  styleUrl: './Main.css',
+  templateUrl: './main.html',
+  styleUrl: './main.css',
 })
 //logika moje komponente
-export class Main {
+export class MainComponent {
   //props - moze ih html koristiti za prikaz
   message: string = 'Hello world!';
-  count = signal(0);
   display: boolean = true;
 
+  count = signal(0);
   title: WritableSignal<string> = signal('Prva komponenta');
 
   receivedMessage = input(); //prima poruku od roditelja

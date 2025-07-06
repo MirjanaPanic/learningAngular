@@ -1,6 +1,14 @@
-.header{
-    background-color: rgb(48, 112, 76);
-    height:50px;
-    margin: 0px;
-    padding: 0px;
+header {
+  background-color: rgb(48, 112, 76);
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
