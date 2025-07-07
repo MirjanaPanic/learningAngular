@@ -11,6 +11,7 @@ import { Component, input, signal, WritableSignal } from '@angular/core';
 //logika moje komponente
 export class HomeComponent {
   //props - moze ih html koristiti za prikaz
+  //po defaultu su PUBLIC - da bi mogle iz svog html fajla(template-a) da se koriste!
   message: string = 'Hello world!';
   display: boolean = true;
 
