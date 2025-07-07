@@ -12,6 +12,7 @@ nav {
 
 p {
   cursor: pointer;
+  padding: 10px;
 }
 p:hover {
   color: rgb(138, 235, 118);
