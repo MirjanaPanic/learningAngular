@@ -5,19 +5,27 @@ export const routes: Routes = [
     path: '',
     pathMatch: 'full',
     loadComponent: () => {
-      return import('./home/home').then((m) => m.HomeComponent);
+      return import('./pages/home/home').then((m) => m.HomeComponent);
     },
   },
   {
     path: 'about',
     loadComponent: () => {
-      return import('./about/about').then((m) => m.AboutComponent);
+      return import('./pages/about/about').then((m) => m.AboutComponent);
     },
   },
   {
     path: 'contact',
     loadComponent: () => {
-      return import('./contact/contact').then((m) => m.ContactComponent);
+      return import('./pages/contact/contact').then((m) => m.ContactComponent);
+    },
+  },
+  {
+    path: 'songs',
+    loadComponent: () => {
+      return import('./components/songslist/songslist').then(
+        (m) => m.SongslistComponent
+      );
     },
   },
 ];
