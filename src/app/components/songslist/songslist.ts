@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SongsService } from '../../services/songs';
+import { Song } from '../../models/song';
 
 @Component({
   selector: 'app-songslist',
@@ -8,5 +10,11 @@ import { Component } from '@angular/core';
   styleUrl: './songslist.css',
 })
 export class SongslistComponent {
-  songs: string[] = ['prva', 'druga', 'treca', 'cetvrta'];
+  songs: Song[] = [];
+
+  constructor(private songsService: SongsService) {} //instanca servisa
+
+  ngOnInit(): void {
+    this.songsService.getAll().subscribe((songs) => this.songs=songs);
+  }
 }

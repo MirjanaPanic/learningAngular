@@ -1,5 +1,9 @@
 <h1>Most viewed songs:</h1>
 
 <ul *ngFor="let song of songs">
-  <li>{{ song }}</li>
+  <li>
+    <p>{{ song.title }}</p>
+    <p>by: {{ song.artist }}</p>
+    <p>views count: {{ song.viewsCount }}</p>
+  </li>
 </ul>
