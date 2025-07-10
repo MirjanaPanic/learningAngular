@@ -24,7 +24,7 @@ export const routes: Routes = [
     path: 'songs',
     loadComponent: () => {
       return import('./components/songslist/songslist').then(
-        (m) => m.SongslistComponent
+        (m) => m.SongsComponent
       );
     },
   },
