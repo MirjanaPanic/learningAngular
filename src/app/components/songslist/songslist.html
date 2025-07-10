@@ -1,6 +1,5 @@
 <h1>Most viewed songs:</h1>
 
-<ul *ngFor="let song of songs">
+<ul *ngFor="let song of song$ | async">
   <app-song-thumb [song]="song"></app-song-thumb>
 </ul>
-

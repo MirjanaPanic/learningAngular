@@ -76,6 +76,13 @@
       "artist": "Neki Izvođač",
       "viewsCount": 0,
       "link": "https://example.com/song/nova"
+    },
+    {
+      "id": "990",
+      "title": "on init test",
+      "artist": "Neki Izvođač",
+      "viewsCount": 0,
+      "link": "https://example.com/song/nova"
     }
   ],
   "mika": "panic"
