@@ -1,2 +1,4 @@
-{{ song.title }} -- {{ song.artist }} -- {{ song.viewsCount }} ---
-{{ song.link }}
+<div *ngIf="song">
+  {{ song.title }} - {{ song.artist }} - {{ song.viewsCount }} -
+  {{ song.link }}
+</div>
