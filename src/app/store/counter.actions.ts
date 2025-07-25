@@ -1,5 +1,6 @@
 import { createAction } from '@ngrx/store';
 
-export const increment = createAction('[Counter Component] Increment');
+//samo se navode ovde, a implementiraju se u komponentama koje ih koriste
+export const increment = createAction('[Counter Component] Increment'); //increment()
 export const decrement = createAction('[Counter Component] Decrement');
 export const reset = createAction('[Counter Component] Reset');

@@ -24,19 +24,15 @@ export class HomeComponent {
   //count = signal(0);
   count$: Observable<number>;
 
+  //koriste se posebni selektori, ali moze i ovako
   constructor(private store: Store<{ count: number }>) {
-    this.count$ = store.select('count');
+    //store je referenca na centralizovani store
+    //komponenta se pretplatila na promenu stanja
+    //cim se azurira stanje tamo u centralizovani store
+    //komponente koje su preplacene ce reagovati
+    
+    this.count$ = store.select((state) => state.count);
   }
-
-  /* increment() {
-    this.count.update((val) => val + 1);
-  }
-  decrement() {
-    this.count.update((val) => val - 1);
-  }
-  reset() {
-    this.count.update((val) => 0);
-  } */
 
   increment() {
     this.store.dispatch(increment());

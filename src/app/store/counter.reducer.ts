@@ -11,3 +11,5 @@ export const counterReducer = createReducer(
   on(decrement, (state) => state - 1),
   on(reset, (state) => 0)
 );
+
+//reducer treba biti cista funkcija - vraca novi objekat a ne menja postojeci!!!(SPREAD operator)
