@@ -8,6 +8,7 @@ import { Observable, of } from 'rxjs';
 @Component({
   selector: 'app-songslist',
   imports: [CommonModule, SongThumb],
+  standalone: true,
   templateUrl: './songslist.html',
   styleUrl: './songslist.css',
 })

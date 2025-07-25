@@ -5,7 +5,7 @@ import { FooterComponent } from './components/footer/footer';
 
 @Component({
   selector: 'app-root', //<app-root> u html-u za izgradnju str.
-  standalone: true,
+  standalone: true, //do Ng v14 su se koristili moduli za registrovanje komponenti
   imports: [HeaderComponent, RouterOutlet, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.css',

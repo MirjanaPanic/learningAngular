@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-song-thumb',
   imports: [CommonModule], //za *ngIf
+  standalone: true,
   templateUrl: './song-thumb.html',
   styleUrl: './song-thumb.css',
 })
