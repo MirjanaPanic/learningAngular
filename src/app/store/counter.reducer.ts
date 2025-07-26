@@ -1,7 +1,9 @@
 import { createReducer, on } from '@ngrx/store';
 import { decrement, increment, reset } from './counter.actions';
 
-export const initialState = 0;
+//Reducers are pure functions in that they produce the same output for a given input
+//immutable
+export const initialState: number = 0;
 
 //ovo je reducer funkcija samo za count stanje! zato sto kaze kako se menja initialState.
 //mozemo imati za svako stanje reducer funkcije.
